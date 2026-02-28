@@ -1,0 +1,21 @@
+[package]
+name = "auria-blockchain"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/auria-core/auria-runtime"
+authors = ["AURIA Team <auria@dust.llc>"]
+description = "AURIA Runtime Core - Blockchain integration for Ethereum/Solidity contracts"
+
+[dependencies]
+auria-core = { path = "../auria-core", version = "0.1.0"}
+auria-settlement = { path = "../auria-settlement", version = "0.1.0"}
+anyhow = "1.0"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["sync", "rt"] }
+reqwest = { version = "0.11", features = ["json"] }
+hex = "0.4"
+sha3 = "0.10"
+rand = "0.8"
