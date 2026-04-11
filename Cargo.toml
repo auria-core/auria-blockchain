@@ -9,7 +9,6 @@ description = "AURIA Runtime Core - Blockchain integration for Ethereum/Solidity
 
 [dependencies]
 auria-core = { path = "../auria-core", version = "0.1.0"}
-auria-settlement = { path = "../auria-settlement", version = "0.1.0"}
 anyhow = "1.0"
 thiserror = "1.0"
 serde = { version = "1.0", features = ["derive"] }
